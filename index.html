@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rouge Culture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rouge Culture</h1>
+
+        <nav>
+            <a href="#inicio" aria-current="page">Início</a>
+            <a href="#minhas-receitas">Minhas receitas</a>
+            <a href="receita.html">Criar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <p class="destaque">Gastronomia</p>
+            <h2>Pesquise, comece e descubra novas receitas</h2>
+
+            <div class="pesquisa">
+                <input type="text" id="campoPesquisa"
+                    placeholder="chicken, arroz, cake...">
+                <button id="botaoPesquisar">🔍︎</button>
+            </div>
+        </section>
+
+        <div class="fundo-conteudo">
+
+            <section class="secao" id="explorar">
+                <h2>Receitas</h2>
+
+                <div id="resultados" class="grade">
+                    <p class="mensagem">Pesquise um prato</p>
+                </div>
+            </section>
+
+            <section class="secao detalhes" id="detalhes" hidden>
+                <button class="botao-voltar" id="botaoFechar">←</button>
+                <div id="informacoesReceita"></div>
+            </section>
+
+            <section class="secao" id="minhas-receitas">
+                <h2>Minhas Receitas</h2>
+
+                <div id="receitasSalvas" class="grade"></div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>Food is art</h2>
+        <p>Rouge Culture</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

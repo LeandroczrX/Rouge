@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar receita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rouge Culture</h1>
+
+        <nav>
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#minhas-receitas">Minhas receitas</a>
+            <a href="receita.html">Criar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao criar">
+            <h2>Nova receita</h2>
+
+            <form id="formReceita">
+
+                <label>Nome</label>
+                <input type="text" id="nome" placeholder="Nome do prato" required>
+
+                <label>Categoria</label>
+                <select id="categoria" required>
+                    <option value="">Escolha uma categoria</option>
+                    <option>Prato</option>
+                    <option>Massa</option>
+                    <option>Bebida</option>
+                    <option>Sobremesa</option>
+                </select>
+
+                <label>Ingredientes</label>
+                <textarea id="ingredientes" placeholder="Um ingrediente por linha" required></textarea>
+
+                <label>Modo de preparo</label>
+                <textarea id="preparo" placeholder="Como preparar?" required></textarea>
+
+                <button type="submit">Salvar receita</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Food is art</h2>
+        <p>Rouge Culture</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

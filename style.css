@@ -1,0 +1,215 @@
+/* Fonte */
+@font-face {
+    font-family: Gelio;
+    src: url("gelio/Gelio%20Fasolada.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f0e2;
+    color: #49352d;
+    font-family: Georgia;
+}
+
+/* Menu */
+
+header {
+    background-color: #641c2b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, footer p {
+    font-family: Gelio;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c49a55;
+}
+
+/* Inicio */
+
+.hero {
+    background: linear-gradient(#39191bcc, #39191bcc), url("img/fundo.jpg") center / cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin: 15px;
+}
+
+.hero .destaque {
+    color: #e4c487;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* Receitas */
+
+.fundo-conteudo {
+    background: linear-gradient(#ece0ccc7, #ece0ccc7), url("img/fundoBranco.jpg") center / cover;
+    min-height: 400px;
+}
+
+.secao {
+    padding: 50px 8%;
+}
+
+.secao h2, .card h3 {
+    color: #641c2b;
+    margin-bottom: 10px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fffdf8;
+    border: 1px solid #e1d3bc;
+    border-radius: 6px;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 18px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+/* Detalhes */
+
+.detalhes {
+    background-color: #fffdf8;
+    margin: 20px 8%;
+    padding: 20px;
+}
+
+.receita-detalhe img {
+    width: 100%;
+    max-width: 440px;
+    margin: 20px 0;
+}
+
+.receita-detalhe h3 {
+    color: #9c2f3d;
+    margin: 20px 0;
+}
+
+.receita-detalhe li {
+    margin: 10px 20px;
+}
+
+
+/* Formulario */
+
+form {
+    background-color: #fffdf8;
+    padding: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #d5c6ae;
+    background-color: #fffdf8;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/* Botao */
+
+button {
+    background-color: #9c2f3d;
+    color: white;
+    padding: 12px;
+    border: 1px solid #c49a55;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #641c2b;
+}
+
+.card button {
+    width: 100%;
+}
+
+.botao-voltar {
+    margin-bottom: 20px;
+}
+
+/* Rodape */
+
+footer {
+    background-color: #641c2b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    color: #e4c487;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .pesquisa {
+        flex-direction: column;
+    }
+
+    .secao {
+        padding: 30px 7%;
+    }
+}
